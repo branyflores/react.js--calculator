@@ -41,8 +41,12 @@ const operatorType = (e) => {
   if (curState === "") return
   if (preState !== "") {
     equals()
-  } setPreState(curState)
-  setCurState("")
+  } else {
+    setPreState(curState)
+    setCurState("")
+  }
+  
+ 
 };
 
 const equals = e => {
@@ -79,10 +83,16 @@ setCurState("")
 }
 
 const minusPlus = () => {
+  if (curState.charAt(0) === "-"){
+    setCurState(curState.substring(1))
+  } else {
+    setCurState("-"+curState);
+  }
 
 }
 
 const percent = () => {
+  preState ? setCurState(String(parseFloat(curState) / 100 * preState)) : setCurState(String(parseFloat(curState) / 100));
 
 }
 const reset = () => {
@@ -91,8 +101,11 @@ const reset = () => {
   setInput("0");
 
 }
+
   return (
-    <div className='container'>
+  
+  
+    <div className='container'>   
       <div className='wrapper'>
         <div className='screen'>
           {input !== "" || input === "0" ? (

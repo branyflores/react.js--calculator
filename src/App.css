@@ -10,7 +10,7 @@
 }
 
 body{
-  background-color: burlywood;
+  background-color: rgba(156, 132, 151, 0.982);
   display: grid;
   place-content: center;
   font-family: 'Roboto', sans-serif;
