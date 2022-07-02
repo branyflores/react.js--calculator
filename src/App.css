@@ -10,7 +10,7 @@
 }
 
 body{
-  background-color: rgba(156, 132, 151, 0.982);
+  background-color: rgba(17, 231, 199, 0.982);
   display: grid;
   place-content: center;
   font-family: 'Roboto', sans-serif;
@@ -21,7 +21,7 @@ body{
 .container {
   height: 80vh;
   width: 50vh;
-  background-color: black;
+  background-color: gray;
   border-radius: 1rem;
   padding: 1rem;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -40,8 +40,10 @@ body{
 
 
 .screen{
+  border-radius: 1rem;
   grid-column: 1 / -1;
-  color: white;
+  background-color: white;
+  color: gray;
   text-align: right;
   padding: 0.5rem;
   font-size: 4rem;
@@ -60,11 +62,11 @@ body{
 }
 
 .btn:hover{
-  background-color: gray;
+  background-color: black;
 }
 
 .light-gray{
-  background-color: gray;
+  background-color: rgb(218, 103, 103);
   color: black;
 
 }

@@ -1,3 +1,4 @@
+Check it out 
+------------------
 
-
-new calculator in progress... 
+[Calculator Rract.js] (https://branyflores.github.io/react.js--calculator/)
